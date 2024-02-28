@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me !!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="responsive-container-block bigContainer">
+    <div class="responsive-container-block Container bottomContainer">
+      <div class="ultimateImg">
+        <img class="mainImg" src="image.png">
+        <div class="purpleBox">
+          <p class="purpleText">
+            Customer Feedback >>>
+          </p>
+          <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
+        </div>
+      </div>
+          <div class="allText bottomText">
+            <p class="text-blk headingText">
+              About Me
+            </p>
+            <p class="text-blk subHeadingText">
+              CulinaryCraftsHub :Welcome to Culina Share – Your Culinary Companion!
+              
+        
+            </p>
+            <p id="introText">
+              Food recipes are more than just instructions for preparing a meal; they are a delightful journey that engages our senses and brings people together. Each recipe is a story told through flavors, textures, and aromas,
+
+            </p>
+            <p class="text-blk description" id="moreText" >
+              "Food recipes are more than just instructions for preparing a meal; they are a delightful journey that engages our senses and brings people together. Each recipe is a story told through flavors, textures, and aromas, capturing the essence of diverse cultures and culinary traditions. It's a creative expression that transforms simple ingredients into a symphony of taste, turning every kitchen into a canvas for culinary art. Whether exploring new cuisines or cherishing time-honored family recipes, cooking is an experience that nourishes not only the body but also the soul, fostering connection, joy, and a shared appreciation for the incredible diversity and richness found in the world of food."
+
+At Culina Share, we believe that the heart of any memorable meal lies in the artful combination of quality ingredients and precise timing. Our passion for food is boundless, and we have created this platform to share the joy of cooking with you.
+            </p>
+            <a onclick="readMore()" class="explore" >
+              View Services
+            </a>
+          </div>
+        </div>
+      </div>
+
+<script>
+  function readMore() {
+      var introText = document.getElementById("introText");
+      var moreText = document.getElementById("moreText");
+      var btn = document.querySelector(".explore");
+
+      if (introText.style.display === "none") {
+          introText.style.display = "block";
+          moreText.style.display = "none";
+          btn.innerHTML = "Read More";
+      } else {
+          introText.style.display = "none";
+          moreText.style.display = "block";
+          btn.innerHTML = "Read Less";
+      }
+  }
+</script>
+</body>
+</html>

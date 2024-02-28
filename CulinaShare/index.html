@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!--  logo in title tab -->
+		<link 
+		rel = "icon"
+		href = "./Images/CulinaShare logo.jpg"; 
+		/>
+		
+		<!-- fontawesome.com icons -->
+		<link
+		rel = "stylesheet"
+		href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity = "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin = "anonymous"
+		referrerpolicy = "no-referrer"
+		/>
+		
+		<!-- Poppins font by google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		/>
+		
+		<!-- Linking CSS file -->
+		<link rel = "stylesheet" href = "./styles.css" />
+
+		<!-- Linking Bootstrap  -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		
+		<title>"CulinaShare"</title>
+	</head>
+	<body>
+		<!-- This is for hero section -->
+		<section class = "hero__section">
+			<header>
+				<nav class = "navbari">
+					<a href = "#">Home </a>
+					<div class = "navbar__menu_container">
+				
+						<a href = "./Submitform/index.html" class = "link" >Create recipes <i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+						<a href = "./loginForm/index.html" class = "link" >Saved <i class="fa-regular fa-bookmark"></i></a>
+						<a href = "./About me/index.html" class = "link" >About Us <i class="fa-regular fa-address-card"></i></a>
+						<a href = "#" class = "user_icon"><i class="fa-solid fa-user"></i></a>
+					</div>
+				</nav>
+				
+			</header>
+			<div class = "hero__section_container">
+				<img src = "./Images/heroSectionLogo.png" alt = "CulinaShare Logo" class = "hero__section_logo" />
+				<h1 class = "hero__section_heading">Discover the best food & drinks recipes</h1>
+				<div class = "hero__section_container_input">
+					<i class="fa-solid fa-layer-group" id = "location_icon"></i>
+					<select  class="form-select">
+						<option>Breakfast recipes</option>
+						<option>Lunch recipes</option>
+						<option>Dinner recipes</option>
+						<option>Salad  recipes</option>
+						<option>Main-course recipes</option>
+						<option>Side-dish recipes</option>
+						<option>Baked-goods recipes</option>
+						<option>Dessert recipes</option>
+						<option>Snack recipes</option>
+						<option>Holiday recipes</option>
+						<option>Vegetarian recipes</option>
+				
+					</select>
+					
+					<input class="form-control me-2"  type = "text" id="searchInput" placeholder = "Search recipes" />
+					<button type="button" class="btn btn-outline-danger" id="searchButton">Search</button>
+				</div>
+			</div>
+		</section>
+		<!-- This is for cards that  offer -->
+		<div class="headboy">
+			<h1>Features</h1>
+		</div>
+		
+		<section class = "container_cards">
+			
+			
+			<div id="mealList" class="meal-list"></div>
+			<div class="modal-container">
+				<button id="recipeCloseBtn" class="close-button">&times;</button>
+				<form action="./loginForm/index.html">
+				<button id="recipeCloseBtn" class="close-button"  ><i class="fa-solid fa-bookmark" ></i></button>
+			</form>
+				<button type="button" class="btn btn-outline-light" id="recipeCloseBtn">Light</button>
+				<div class="meal-details-content">
+					
+					<!-- Content from js will be inserted here -->
+				</div>
+			</div>
+		
+		
+			 <div class = "we_offer__cards">
+				<img src = "./Images/item1.png"  alt = "card1 image"/>
+				
+				<div class = "we_offer__cards_content">
+					<h2>BreakFast Recipes</h2>
+					<p>Stay home and Make your BreakFast</p>
+					<a href="./loginForm/index.html"><i class="fa-solid fa-bookmark"></i></a>
+					
+				</div>
+			 </div>
+			 
+			 <div class = "we_offer__cards">
+				<img src = "./Images/item2.png" alt = "card1 image"/>
+				<div class = "we_offer__cards_content">
+					<h2>Lunch Recipes</h2>
+					<p>Visit amazing recipes of Lunch</p>
+					<a href="./loginForm/index.html"><i class="fa-solid fa-bookmark"></i></a>
+				</div>
+			 </div>
+			 
+			 <div class = "we_offer__cards">
+				<img src = "./Images/Dinner recipes.jpg" alt = "card1 image"/>
+				<div class = "we_offer__cards_content">
+					<h2>Dinner Recipes</h2>
+					<p>Spend leisure time enjoying the dinner respices</p>
+					<a href="./loginForm/index.html"><i class="fa-solid fa-bookmark"></i></a>
+				</div>
+			 </div>
+			 
+			 <div class = "we_offer__cards">
+				<img src = "./Images/item4.png" alt = "card1 image"/>
+				<div class = "we_offer__cards_content">
+					<h2>Quick Meal Recipes</h2>
+					<p>We ensure our perfect recipes service</p>
+					<a href="./loginForm/index.html"><i class="fa-solid fa-bookmark"></i></a>
+				</div>
+			 </div>
+			 
+		</section>
+		<!-- This is for collection section -->
+		<section class = "container_collections">
+			<h1>Collections</h1>
+			<div class = "sub_heading__container">
+				<span>Explore curated lists of top recipes in Vegetarian, Non-Vegeterian, Quick Meals, Desserts etc.</span>
+				<span id = "span">All collections</span>
+			</div>
+			<div class = "collections__cards_container">
+					
+				<div class = "cards card1">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4>Vegetarian</h4>
+						<span>1560+ recipes</span>
+					</div>
+				</div>
+				
+				<div class = "cards card2">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4>Non-Vegetarian</h4>
+						<span>120+ recipes</span>
+					</div>
+				</div>
+				
+				<div class = "cards card3">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4>Quick Meals</h4>
+						<span>136+ recipes</span>
+					</div>
+				</div>
+				
+				<div class = "cards card4">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Desserts</h4>
+						<span>186+ recipes</span>
+					</div>
+				</div>
+				<div class = "cards card5">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Salad  recipes</h4>
+						<span>146+ recipes</span>
+					</div>
+				</div>
+				<div class = "cards card6">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Main-course recipes</h4>
+						<span>145+ recipes</span>
+					</div>
+				</div>
+				<div class = "cards card7">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Side-dish recipes</h4>
+						<span>167+ recipes</span>
+					</div>
+				</div>
+				<div class = "cards card8">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Baked-goods recipes</h4>
+						<span>153+ recipes</span>
+					</div>
+				</div>
+				<div class = "cards card9">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Vegetarian recipes</h4>
+						<span>116+ recipes</span>
+					</div>
+				</div>
+				<div class = "cards card10">
+					<div class = "overlay"></div>
+					<i class="fa-solid fa-heart"></i>
+					<div class = "collections__content">
+						<h4> Holiday recipes</h4>
+						<span>126+ recipes</span>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+
+							
+		<footer class = "footer__container">
+			<div class = "footer_section1">
+				<img src = "./Images/logo.png" alt = "zomato logo" />
+				<div class = "section1__button_container">
+					<button>
+						<img src = "./Images/IndianFlag.png" alt = "Indian Flag" style = "width: 16px; height: 16px" />
+						<select style = "border: none; background: #e8e8e8; cursor: pointer">
+							<option>India</option>
+							<option>United States</option>
+							<option>Australia</option>
+							<option>New Zealand</option>
+							<option>Spain</option>
+							<option>England</option>
+						</select>
+					</button>
+					<button>
+						<i class = "fa fa-globe"></i>
+						<select style = "border: none; background: #e8e8e8; cursor: pointer">
+							<option>English</option>
+							<option>Español</option>
+							<option>Čeština</option>
+							<option>Slovenčina</option>
+							<option>Polish</option>
+							<option>Italian</option>
+						</select>
+					</button>
+				</div>
+			</div>
+			<div class = "navigation_container">
+				<div class = "link_container">
+					<h5>About CulinaShare</h5>
+					<div class = "link_container_anchors">
+						<a href = "#">Who We Are</a>
+						<a href = "#">Blog</a>
+						<a href = "#">Work With Us</a>
+						<a href = "#">Investor Relations</a>
+						<a href = "#">Report Fraud</a>
+						<a href = "#">Contact Us</a>
+					</div>
+				</div>
+				
+				<div class = "link_container">
+					<h5>CulinaShare</h5>
+					<div class = "link_container_anchors">
+						<a href = "#">CulinaShare</a>
+						<a href = "#">Blinkit</a>
+						<a href = "#">Feeding India</a>
+						<a href = "#">Hyperpure</a>
+						
+					</div>
+				</div>
+				
+				<div class = "link_container">
+					<h5>For Restaurants</h5>
+					<div class = "link_container_anchors">
+						<a href = "#">Partner With Us</a>
+						<a href = "#">Apps For You</a>
+					</div>
+					<h5 id = "enterprises">For Enterprises</h5>
+					<div class = "link_container_anchors">
+						<a href = "#">CulinaShare For Work</a>
+					</div>
+				</div>
+				
+				<div class = "link_container">
+					<h5>Learn More</h5>
+					<div class = "link_container_anchors">
+						<a href = "#">Privacy</a>
+						<a href = "#">Security</a>
+						<a href = "#">Terms</a>
+						<a href = "#">Sitemap</a>
+					</div>
+				</div>
+				
+				<div class = "link_container">
+					<h5>Social Links</h5>
+					<div class = "social_media_icon_buttons">
+						<button><i class="fa-brands fa-linkedin-in"></i>	</button>
+						<button><i class = "fa-brands fa-instagram"></i></button>
+						<button><i class = "fa-brands fa-twitter"></i></button>
+						<button><i class = "fa-brands fa-facebook"></i></button>
+						<button><i class = "fa-brands fa-youtube"></i></button>
+						<div class = "social_media_logos">
+							<img src = "./Images/appleStore.png" alt = "Apple store" />
+							<img src = "./Images/playStore.png" alt = "Play store" id = "img2"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "disclaimer">
+			By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+			Privacy Policy and Content Policies. All trademarks are properties of their respective owners.
+			2008-2023 © CulinaShare Ltd. All rights reserved.
+			</div>
+		</footer>
+		<!-- linking Javascript -->
+		<script src="Script.js"></script>
+
+		<!-- linking Bootstrap Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>
